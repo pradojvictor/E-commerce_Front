@@ -53,7 +53,7 @@ export default async function handle(req, res) {
         customer_email: email,
         success_url: process.env.PUBLIC_URL + '/cart?success=1',
         cancel_url: process.env.PUBLIC_URL + '/cart?canceled=1',
-        metadata: { orderId: orderDoc._id.toString() },
+        metadata: { orderId: orderDoc._id.toString(), test:'ok' },
     });
 
     res.json({
@@ -61,3 +61,4 @@ export default async function handle(req, res) {
     })
 }
 
+//10:23:37
