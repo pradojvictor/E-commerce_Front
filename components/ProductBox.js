@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { styled } from "styled-components"
 import Button from "./Button";
-import CartIcon from "./icons/CartIcon";
 import Link from "next/link";
 import { useContext } from "react";
 import { CartContext } from "./CartContext";
@@ -52,7 +51,7 @@ export default function ProductBox({ _id, title, description, price, images }) {
         <ProductWrapper>
             <WhiteBox href={url}>
                 <div>
-                    <img src={images[0]} alt="" />
+                    <img src={images?.[0]} alt="" />
                 </div>
             </WhiteBox>
             <ProductInfoBox>
@@ -67,8 +66,6 @@ export default function ProductBox({ _id, title, description, price, images }) {
                         outline={1}>Add to cart</Button>
                 </PriceRow>
             </ProductInfoBox>
-
         </ProductWrapper>
     )
 }
-//8:22:18

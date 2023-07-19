@@ -38,6 +38,3 @@ export function CartContextProvider({ children }) {
         </CartContext.Provider>
     );
 }
-
-//9:02:40 filter()
-//add ls in [ls]

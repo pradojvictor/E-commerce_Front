@@ -60,5 +60,3 @@ export default async function handle(req, res) {
         url: session.url,
     })
 }
-
-//10:23:37

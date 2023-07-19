@@ -220,5 +220,3 @@ export default function CartPage() {
         </>
     )
 }
-
-//9:48:07 noite 10/07
